@@ -18,6 +18,14 @@ app.get("/bananas", async (_req, res) => {
     });
 });
 
+app.use((req, _res, next) => {   
+
+    console.log(`${req.method} ${req.originalUrl}`); 
+
+    next(); 
+
+}); 
+
 app.listen(PORT, () => {
     console.log("Server is running on port", PORT);
 });
