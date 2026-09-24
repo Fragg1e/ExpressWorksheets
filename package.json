@@ -9,7 +9,7 @@
     "start": "node build/app.js",
     "dev": "tsx watch src/app.ts", 
     "typecheck": "tsc --noEmit" ,
-    "launch": "npm run build && npm run start"
+    "launch": "npm run build && npm run dev"
   },
   "keywords": [],
   "author": "",
